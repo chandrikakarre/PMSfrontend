@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useAuth } from '../../hooks/useAuth';
+//import { useAuth } from '../../hooks/useAuth';
 
 function Signup() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { signup } = useAuth();
+   // const { signup } = useAuth();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        signup(email, password);
+        Signup(email, password);
     };
 
     return (
@@ -19,18 +19,18 @@ function Signup() {
                     <label>Email</label>
                     <input 
                         type="email" 
-                        value={email} 
-                        onChange={(e) => setEmail(e.target.value)} 
-                        required
+                        // value={email} 
+                        // onChange={(e) => setEmail(e.target.value)} 
+                        // required
                     />
                 </div>
                 <div>
                     <label>Password</label>
                     <input 
                         type="password" 
-                        value={password} 
-                        onChange={(e) => setPassword(e.target.value)} 
-                        required
+                        // value={password} 
+                        // onChange={(e) => setPassword(e.target.value)} 
+                        // required
                     />
                 </div>
                 <button type="submit">Signup</button>
