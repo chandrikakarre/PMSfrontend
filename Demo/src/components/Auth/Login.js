@@ -15,26 +15,27 @@ function Login() {
 
     return (
         <div className="login-container">
-            <h2>Sign in</h2>
+            <h2>Login</h2>
             <button className="google-login">Sign in with Google</button>
             <button className="facebook-login">Sign in with Facebook</button>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="email" 
                     placeholder="Email" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required 
+                    // value={email}
+                    // onChange={(e) => setEmail(e.target.value)}
+                    // required 
                 />
                 <input 
                     type="password" 
                     placeholder="Password" 
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required 
+                    // value={password}
+                    // onChange={(e) => setPassword(e.target.value)}
+                    // required 
                 />
                 <button type="submit">Login</button>
             </form>
+            
         </div>
     );
 }
